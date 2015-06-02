@@ -4,9 +4,10 @@ package com.valik.domain;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
- * Created by валик on 02.06.2015.
+ * Created by пїЅпїЅпїЅпїЅпїЅ on 02.06.2015.
  */
 @Entity
 @Table(name = "book")
@@ -29,7 +30,7 @@ public class Book {
     private String autor;
 
     @Column(name="date")
-    private String date;
+    private Date date;
 
     public int getId() {
         return id;
@@ -71,15 +72,24 @@ public class Book {
         this.autor = autor;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public Book(String name, String descrition, int pageCount, String autor, String date) {
+    public Book(int id, String name, String descrition, int pageCount, String autor, Date date) {
+        this.id = id;
+        this.name = name;
+        this.descrition = descrition;
+        this.pageCount = pageCount;
+        this.autor = autor;
+        this.date = date;
+    }
+
+    public Book(String name, String descrition, int pageCount, String autor, Date date) {
         this.name = name;
         this.descrition = descrition;
         this.pageCount = pageCount;

@@ -42,5 +42,7 @@
     <orderEntry type="library" exported="" name="Gradle: xml-apis:xml-apis:1.0.b2" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.mockito:mockito-core:1.9.5" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: org.objenesis:objenesis:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.mockito:mockito-core:1.9.5" level="project" />
   </component>
 </module>
